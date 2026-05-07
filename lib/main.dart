@@ -19,45 +19,20 @@ class MyApp extends StatelessWidget {
 
         body: Column(
           children: [
-
-
             Expanded(
-              child: Row(
-                children: [
-
-                  Expanded(
-                    child: Container(
-                      color: Colors.redAccent,
-                    ),
-                  ),
-
-                  Expanded(
-                    child: Container(
-                      color: Colors.green,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
+                child: Row(
+                  children: [
+                    Expanded(child: Container(color: Colors.white,)),
+                    Expanded(child: Container(color: Colors.orange))
+                  ],
+            )),
             Expanded(
-              child: Row(
-                children: [
-
-                  Expanded(
-                    child: Container(
-                      color: Colors.blue,
-                    ),
-                  ),
-
-                  Expanded(
-                    child: Container(
-                      color: Colors.orange,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                child: Row(
+                  children: [
+                    Expanded(child: Container(color: Colors.green,)),
+                    Expanded(child: Container(color: Colors.pink))
+                  ],
+                )),
           ],
         ),
       ),
