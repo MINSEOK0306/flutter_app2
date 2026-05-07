@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color(0xFFFDE8EC),
           elevation: 0,
           title: Text(
-            'Sweet Sew',
+            '',
             style: TextStyle(
               color: Color(0xFFFF8C42),
               fontSize: 22,
