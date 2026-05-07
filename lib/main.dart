@@ -12,43 +12,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
+        body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(flex: 1, child: Container(height: 50, color: Colors.blue)),
+              Expanded(flex: 2, child: Container(height: 50, color: Colors.red)),
+              Expanded(flex: 1, child: Container(height: 50, color: Colors.black)),
+              // Container(height: 50, width: 50,color: Colors.red,),
 
-            Expanded(
-              flex: 3,
-              child: Container(
-                color: Colors.lightBlue,
-              ),
-            ),
+              //Expanded(child: Container(height: 50, color: Colors.green)),
+              //Container(height: 50, width: 50,color: Colors.green,),
 
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.yellow,
 
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-
-                    Icon(
-                      Icons.settings,
-                      size: 40,
-                      color: Colors.blue,
-                    ),
-
-                    Icon(
-                      Icons.person,
-                      size: 40,
-                      color: Colors.red,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+              //Container(height: 50, width: 50,color: Colors.blue,),
+            ],
+          ),
+        )
+      )
     );
   }
 }
