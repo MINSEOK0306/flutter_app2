@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  print("hello world");
   runApp(MyApp());
 }
 
@@ -12,25 +11,56 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(flex: 1, child: Container(height: 50, color: Colors.blue)),
-              Expanded(flex: 2, child: Container(height: 50, color: Colors.red)),
-              Expanded(flex: 1, child: Container(height: 50, color: Colors.black)),
-              // Container(height: 50, width: 50,color: Colors.red,),
 
-              //Expanded(child: Container(height: 50, color: Colors.green)),
-              //Container(height: 50, width: 50,color: Colors.green,),
+        appBar: AppBar(
+          title: Text("2x2 정사각형"),
+          backgroundColor: Colors.blue,
+        ),
+
+        body: Column(
+          children: [
 
 
-              //Container(height: 50, width: 50,color: Colors.blue,),
-            ],
-          ),
-        )
-      )
+            Expanded(
+              child: Row(
+                children: [
+
+                  Expanded(
+                    child: Container(
+                      color: Colors.red,
+                    ),
+                  ),
+
+                  Expanded(
+                    child: Container(
+                      color: Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Expanded(
+              child: Row(
+                children: [
+
+                  Expanded(
+                    child: Container(
+                      color: Colors.blue,
+                    ),
+                  ),
+
+                  Expanded(
+                    child: Container(
+                      color: Colors.orange,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
