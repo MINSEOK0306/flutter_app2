@@ -23,12 +23,12 @@ class MyApp extends StatelessWidget {
             children: [
               Text(
                 "위에 텍스트",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 30),
               ),
               SizedBox(height: 50),
               Text(
                 "아래 텍스트",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 30),
 
               )
             ],
