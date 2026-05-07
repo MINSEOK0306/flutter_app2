@@ -13,29 +13,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
 
         appBar: AppBar(
-          title: Text("마진과 패딩"),
+          title: Text("sizedbox 예제"),
           backgroundColor: Colors.blue,
         ),
 
-        body: Column(
-          children:[
-            Container(
-              width:150,
-              height: 150,
-              margin: EdgeInsets.only(
-                  top: 20,
-                  left: 10,
-                  right: 10,
-                  bottom: 5),
-              padding: EdgeInsets.all(30),
-              color: Colors.red,
-                child: Center(
-                  child: Text(
-                  '마진연습',
-                   style: TextStyle(color: Colors.white, fontSize: 20),)
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "위에 텍스트",
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(height: 50),
+              Text(
+                "아래 텍스트",
+                style: TextStyle(fontSize: 20),
+
               )
-            )
-          ],
+            ],
+          )
         ),
       ),
     );
